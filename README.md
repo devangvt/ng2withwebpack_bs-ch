@@ -1,0 +1,1 @@
+Playground for angular2, ng2-bootstrap and ng2-charts

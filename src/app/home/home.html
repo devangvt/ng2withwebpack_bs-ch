@@ -1,0 +1,23 @@
+<div>
+  <span x-large>Your Content Here</span>
+  <input type="text" [value]="title.value" (input)="title.value = $event.target.value" autofocus>
+
+  <p>
+  <button type="button" name="button" (click)="addAlert()">Add Alert</button>
+</p>
+<p>
+  <alert *ngFor="#alert of alerts" [type]="alert">Test alert</alert>
+</p>
+<div class="col-md-6">
+<base-chart class="chart"
+           [data]="barChartData"
+           [labels]="barChartLabels"
+           [options]="barChartOptions"
+           [series]="barChartSeries"
+           [legend]="barChartLegend"
+           [series]="barChartSeries"
+           [chartType]="barChartType"
+           (chartHover)="chartHovered($event)"
+           (chartClick)="chartClicked($event)"></base-chart>
+ <div>
+</div>
