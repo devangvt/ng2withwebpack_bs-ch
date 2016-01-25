@@ -34,6 +34,10 @@ export class Home {
   constructor(public title: Title, public http: Http) {
 
   }
+  // Pie
+  private pieChartLabels = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+  private pieChartData = [300, 500, 100];
+  private pieChartType = 'Pie';
   public alerts: string[] = [];
   public types = ['success', 'info', 'warning', 'danger'];
   private barChartOptions = {
